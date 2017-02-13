@@ -20,6 +20,7 @@ class TestUtils(unittest.TestCase):
     def test_roots(self):
         slef.assertEqual(utils.roots(5,2,3),-1)
         self.assertEqual(utils.roots(2,20,2),(2,5))
+        self.assertIsInstance(utils.roots(2,20,2),tuple)
 
     
     def test_integrate(self):
