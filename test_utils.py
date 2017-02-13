@@ -7,7 +7,7 @@ import utils
 
 class TestUtils(unittest.TestCase):
     def test_fact(self):
-        self.assertEqual(utils.fact(5),None)
+        self.assertEqual(utils.fact(5),120)
         self.assertEqual(utils.fact(0),1)
         try:
             utils.fact(-5)
@@ -17,7 +17,9 @@ class TestUtils(unittest.TestCase):
         self.assertIsNone()
     
     def test_roots(self):
-        pass
+        slef.assertEqual(utils.roots(5,2,3),-1)
+        self.assertEqual(utils.roots(2,20,2),(2,5))
+
     
     def test_integrate(self):
         # À compléter...
