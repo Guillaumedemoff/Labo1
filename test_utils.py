@@ -15,11 +15,11 @@ class TestUtils(unittest.TestCase):
             self.assertTrue(False)
         except ValueError:
             self.assertTrue(True) 
-        self.assertIsNone()
+        
     
     def test_roots(self):
-        slef.assertEqual(utils.roots(5,2,3),-1)
-        self.assertEqual(utils.roots(2,20,2),(2,5))
+        self.assertEqual(utils.roots(5,2,3),-1)
+        self.assertEqual(utils.roots(1,0,-1),(1,-1))
         self.assertIsInstance(utils.roots(2,20,2),tuple)
 
     
